@@ -77,3 +77,56 @@ aside {
   border-top: 5px solid #08967e;
   border-bottom: 5px solid #08967e;
 }
+
+/* .first-li {
+  font-weight: bold;
+} */
+
+/* pseudo class selection */
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child(2) {
+  color: red;
+}
+
+li:nth-child(odd) {
+  color: orange;
+}
+
+/* misconception: this doesn't work */
+article p:first-chile {
+  color: red;
+}
+
+/* this works because the last child of article is a p element */
+/* article p:last-child {
+  color: red;
+} */
+
+/* only select anchor with href link */
+a:link {
+  color: #08967e;
+  text-decoration: none;
+}
+
+a:visited {
+  color: yellowgreen;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: yellow;
+  font-style: italic;
+}
+/* LVHA */
