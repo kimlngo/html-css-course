@@ -83,7 +83,7 @@ aside {
 } */
 
 /* pseudo class selection */
-li:first-child {
+/* li:first-child {
   font-weight: bold;
 }
 
@@ -97,7 +97,7 @@ li:nth-child(2) {
 
 li:nth-child(odd) {
   color: orange;
-}
+} */
 
 /* misconception: this doesn't work */
 article p:first-chile {
@@ -130,3 +130,20 @@ a:active {
   font-style: italic;
 }
 /* LVHA */
+
+/* Resolving Selector Conflict */
+#copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green !important;
+}
