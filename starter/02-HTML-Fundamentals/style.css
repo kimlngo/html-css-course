@@ -1,11 +1,12 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+* {
+  /* universal selector */
+  /* border-top: 10px solid #08967e; */
+}
+
+body {
   color: #444;
   font-family: sans-serif;
+  border-top: 10px solid #08967e;
 }
 
 h1,
@@ -132,7 +133,7 @@ a:active {
 /* LVHA */
 
 /* Resolving Selector Conflict */
-#copyright {
+/* #copyright {
   color: red;
 }
 
@@ -146,4 +147,4 @@ a:active {
 
 footer p {
   color: green !important;
-}
+} */
