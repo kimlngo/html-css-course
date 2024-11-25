@@ -1,6 +1,11 @@
+/* Big Section */
+
 * {
   /* universal selector */
   /* border-top: 10px solid #08967e; */
+  /* Global Reset */
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -9,6 +14,57 @@ body {
   border-top: 10px solid #08967e;
 }
 
+.container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+}
+.main-header {
+  background-color: #f7f7f7;
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  /* height: 80px;*/
+}
+
+nav {
+  font-size: 18px;
+}
+
+nav a:link {
+  padding: 0 5px;
+  /* background-color: bisque;
+  margin: 20px;
+  padding: 20px;
+  display: block; */
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #08967e;
+  border-bottom: 5px solid #08967e;
+  padding: 50px 0;
+  width: 500px;
+}
+
+/* Small Section */
 h1,
 h2,
 h3 {
@@ -23,10 +79,13 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 h4 {
@@ -38,12 +97,22 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
 }
 
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
 li {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
+li:last-child {
+  margin-bottom: 0;
+}
 /* footer p {
   font-size: 16px;
 } */
@@ -69,16 +138,12 @@ li {
   list-style: none;
 }
 
-.main-header {
-  background-color: #f7f7f7;
+.post-img {
+  width: 100%;
+  /* set height to auto because we've already set height in html, 
+  if we didn't, then this is unnecessary */
+  height: auto;
 }
-
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #08967e;
-  border-bottom: 5px solid #08967e;
-}
-
 /* .first-li {
   font-weight: bold;
 } */
