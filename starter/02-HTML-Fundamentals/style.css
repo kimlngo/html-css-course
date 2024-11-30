@@ -1,8 +1,6 @@
 /* Big Section */
 
 * {
-  /* universal selector */
-  /* border-top: 10px solid #08967e; */
   /* Global Reset */
   margin: 0;
   padding: 0;
@@ -20,29 +18,19 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin: 0 auto;
-  /* position: relative; */
 }
 .main-header {
   background-color: #f7f7f7;
-  /* padding: 20px;
-  padding-left: 40px;
-  padding-right: 40px; */
   padding: 20px 40px;
   margin-bottom: 60px;
-  /* height: 80px;*/
 }
 
 nav {
   font-size: 18px;
-  text-align: center;
 }
 
 nav a:link {
   padding: 0 5px;
-  /* background-color: bisque;
-  margin: 20px;
-  padding: 20px;
-  display: block; */
   margin-right: 30px;
   margin-top: 10px;
   display: inline-block;
@@ -58,7 +46,6 @@ article {
 
 .post-header {
   margin-bottom: 40px;
-  /* position: relative; */
 }
 aside {
   background-color: #f7f7f7;
@@ -117,9 +104,6 @@ li {
 li:last-child {
   margin-bottom: 0;
 }
-/* footer p {
-  font-size: 16px;
-} */
 
 /* id selctor */
 #author {
@@ -144,8 +128,6 @@ li:last-child {
 
 .post-img {
   width: 100%;
-  /* set height to auto because we've already set height in html, 
-  if we didn't, then this is unnecessary */
   height: auto;
 }
 /* .first-li {
@@ -174,11 +156,6 @@ article p:first-chile {
   color: red;
 }
 
-/* this works because the last child of article is a p element */
-/* article p:last-child {
-  color: red;
-} */
-
 /* only select anchor with href link */
 a:link {
   color: #08967e;
@@ -206,30 +183,11 @@ a:active {
   cursor: pointer;
 
   position: absolute;
-  /* top: 50px;
-  left: 50px; */
 
   bottom: 50px;
   right: 50px;
 }
 /* LVHA */
-
-/* Resolving Selector Conflict */
-/* #copyright {
-  color: red;
-}
-
-.copyright {
-  color: blue;
-}
-
-.text {
-  color: yellow;
-}
-
-footer p {
-  color: green !important;
-} */
 
 /* pseudo element */
 h1::first-letter {
@@ -254,12 +212,37 @@ h2::after {
   right: -25px;
 }
 
-/* h2::first-letter {
-  font-size: 80px;
-  margin-right: 5px;
-} */
-
 /* adjacent siblings */
 h3 + p::first-line {
   color: red;
+}
+
+/* FLOATS */
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
 }
